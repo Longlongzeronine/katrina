@@ -18,7 +18,7 @@
       {
         "icon": "FaPhone",
         "label": "Phone",
-        "value": "+6309676002447",
+        "value": "+639676002447",
         "color": "green",
         "iconColor": "text-green-400",
         "hoverBorder": "group-hover:border-green-500"

@@ -1,43 +1,38 @@
 {
   "about": {
     "title": "About Karina",
-    "description": "Embarking on my professional journey in 2016, I entered the remote work arena with no prior experience. With a steadfast belief in the power of aspiration, I quickly rose through the ranks, beginning as an ESL teacher. In just two years, I earned a promotion to the role of Recruitment Specialist, expanding my responsibilities to include sourcing and marketing.",
+    "description": "A dedicated and enthusiastic graduate of University of Mindanao with a degree in Education, committed to creating a positive and engaging learning environment. I have developed skills in lesson planning, classroom management, and student engagement through my academic training and teaching experiences. I am eager to create a positive, inclusive, and motivating learning environment where students feel supported and encouraged to reach their full potential. Passionate about teaching and inspiring students to reach their full potential, I aim to foster academic growth, character development, and lifelong learning in every classroom I serve.",
     "imageAlt": "Francis Amoguis",
-    "sections": {
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "education": "🎓 Education"
-    },
-    "frontendSkills": [
-      { "name": "HTML", "icon": "FaHtml5", "color": "text-orange-500" },
-      { "name": "React", "icon": "FaReact", "color": "text-cyan-400" },
-      { "name": "Vite", "icon": "SiVite", "color": "text-purple-400" },
-      { "name": "Flutter", "icon": "SiFlutter", "color": "text-blue-400" },
-      { "name": "Bootstrap", "icon": "FaBootstrap", "color": "text-purple-500" },
-      { "name": "TailwindCSS", "icon": "SiTailwindcss", "color": "text-sky-400" }
-    ],
-    "backendSkills": [
-      { "name": "PHP", "icon": "FaPhp", "color": "text-indigo-400" },
-      { "name": "Node.js", "icon": "FaNodeJs", "color": "text-green-600" },
-      { "name": "Python", "icon": "FaPython", "color": "text-yellow-400" },
-      { "name": "Firebase", "icon": "FaDatabase", "color": "text-blue-500" },
-      { "name": "PhpMyAdmin", "icon": "SiPhpmyadmin", "color": "text-orange-400" },
-      { "name": "SQLyog", "icon": "FaDatabase", "color": "text-red-500" }
-    ],
-    "education": [
+    "skillCards": [
       {
-        "title": "Bachelor of Elementary Education",
-        "school": "UMTC University of Mindanao Tagum City",
-        "year": "2022–2026"
+        "icon": "FaGraduationCap",
+        "title": "Career Advancement",
+        "description": "Take licensure examination, Take Masters Degree, Join groups in my city, professional"
       },
       {
-        "title": "Relevant Coursework",
-        "school": "Web, Mobile, Flutter Development"
+        "icon": "FaPiggyBank",
+        "title": "Financial Stability",
+        "description": "Open Savings account, Earn Bigger Salary"
       },
       {
-        "title": "Visayan Village Central Elementary School & Magugpo Pilot Central Elementary School",
-        "school": "AI-driven contractor platform",
-        "year": "2025"
+        "icon": "FaHeartbeat",
+        "title": "Health & Wellness",
+        "description": "Lower health care coverage costs, Ensure medical insurance for myself and for my family."
+      },
+      {
+        "icon": "FaHandsHelping",
+        "title": "Community Engagement",
+        "description": "Find opportunities to volunteer in community outreach programs."
+      },
+      {
+        "icon": "FaToolbox",
+        "title": "Added Skills",
+        "description": "Service Proficiency, Attention to detail."
+      },
+      {
+        "icon": "FaHome",
+        "title": "Personal Satisfaction",
+        "description": "Earn enough money for emergency and for future use, To build a house that I can call my own, To start a business."
       }
     ]
   }

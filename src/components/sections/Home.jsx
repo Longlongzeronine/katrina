@@ -46,6 +46,7 @@ export const Home = ({ goToPage }) => {
           <div className="text-center z-10 px-6 py-8 sm:py-10 rounded-2xl bg-black/40 backdrop-blur-md border border-white/15 shadow-2xl max-w-lg mx-auto">
             <h1 className="text-3xl md:text-6xl font-bold mb-6 text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">
               {home.title}
+                  <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent">Katrina</span>
             </h1>
 
             <p className="text-gray-100 text-base sm:text-lg mb-8 leading-relaxed drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">

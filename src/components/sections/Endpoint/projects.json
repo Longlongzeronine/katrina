@@ -3,50 +3,66 @@
     {
       "id": 1,
       "image": "./sample-proj/p-1.png",
-      "title": "UM Research Portal",
-      "description": "A website to efficiently manage, track, and store research titles, enabling categorization, collaboration, and easy searchable access to research projects.",
-      "technologies": ["Bootstrap", "HTML", "MySQL", "PHP"],
+      "title": "Project Gallery",
+      "description": "Here are some of the projects I worked on.",
       "gallery": ["./sample-proj/p-1.png"]
     },
     {
       "id": 2,
       "image": "./sample-proj/p-4.png",
-      "title": "My Portfolio",
-      "description": "A portfolio of modern, responsive web apps built with React.js, Tailwind CSS, HTML, and CSS — focused on clean, intuitive design.",
-      "technologies": ["Tailwind CSS", "React JS", "HTML", "CSS"],
+      "title": "Project Gallery",
+      "description": "Here are some of the projects I worked on.",
       "gallery": ["./sample-proj/p-4.png"]
     },
     {
       "id": 3,
       "image": "./sample-proj/p-2.png",
-      "title": "Barangay Governance Management System",
-      "description": "The E-BRGY system modernizes barangay administration in the Philippines by automating processes and enhancing transparency.",
-      "technologies": ["Bootstrap", "Hostinger", "MySQL", "PHP"],
+      "title": "Project Gallery",
+      "description": "Here are some of the projects I worked on.",
       "gallery": ["./sample-proj/p-2.png"]
     },
     {
       "id": 4,
       "image": "./sample-proj/p-5.png",
-      "title": "PALMPC Coop Cashiering & Inventory System",
-      "description": "A cooperative cashiering and inventory system with barcode scanning and thermal printing for fast and accurate transactions.",
-      "technologies": [".NET", "Visual Basic .NET", "SQLYOG", "Github"],
-      "gallery": ["./sample-proj/p-5.png"]
-    },
-    {
-      "id": 5,
-      "image": "./sample-proj/p-7.png",
-      "title": "UMV Canteen Cashiering & Inventory System",
-      "description": "A comprehensive POS and inventory management platform equipped with barcode technology and thermal printing capabilities for seamless transaction processing.",
-      "technologies": [".NET", "Visual Basic .NET", "SQLYOG", "Github"],
+      "title": "Project Gallery",
+      "description": "Here are some of the projects I worked on.",
       "gallery": ["./sample-proj/p-7.png"]
+    }
+  ],
+  "workValues": [
+    {
+      "id": 1,
+      "image": "./sample-proj/p-5.png",
+      "title": "Work Values Inventory",
+      "description": "This is my Work Values Inventory.",
+      "gallery": ["./sample-proj/p-5.png", "./sample-proj/p-6.png"]
     },
     {
-      "id": 6,
-      "image": "./sample-proj/p-6.png",
-      "title": "Amoguis Inventory App",
-      "description": "This is a Flutter mobile app with Firebase backend, featuring an AI chatbot to assist users with inventory management efficiently.",
-      "technologies": ["Flutter", "Firebase", "Dart", "AI Chatbot"],
-      "gallery": ["./sample-proj/p-6.png"]
+      "id": 2,
+      "image": "./sample-proj/p-8.png",
+      "title": "Work Values Inventory",
+      "description": "This is my Work Values Inventory.",
+      "gallery": ["./sample-proj/p-8.png"]
     }
+  ],
+  "projectGallery": [
+    "./sample-proj/p-11.png",
+    "./sample-proj/p-12.png",
+    "./sample-proj/p-13.png",
+    "./sample-proj/p-14.png",
+    "./sample-proj/p-16.png",
+    "./sample-proj/p-17.png",
+    "./sample-proj/p-18.png",
+    "./sample-proj/p-19.png",
+    "./sample-proj/p-20.png",
+    "./sample-proj/p-21.png",
+    "./sample-proj/p-22.png",
+    "./sample-proj/p-23.png",
+    "./sample-proj/p-24.png",
+    "./sample-proj/p-25.png",
+    "./sample-proj/p-26.png",
+    "./sample-proj/p-27.png",
+    "./sample-proj/p-28.png",
+    "./sample-proj/p-29.png"
   ]
 }
