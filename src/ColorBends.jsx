@@ -18,9 +18,9 @@ import {
 const Squares = ({
   direction = 'diagonal',
   speed = 0.5,
-  borderColor = '#1a1a2e',
+  borderColor = '#0a1628',
   squareSize = 48,
-  hoverFillColor = '#16213e',
+  hoverFillColor = '#0d2137',
 }) => {
   const canvasRef = useRef(null);
   const requestRef = useRef(null);
@@ -71,7 +71,7 @@ const Squares = ({
         Math.sqrt(canvas.width ** 2 + canvas.height ** 2) / 2
       );
       gradient.addColorStop(0, 'rgba(0, 0, 0, 0)');
-      gradient.addColorStop(1, '#060010');
+      gradient.addColorStop(1, '#000d1a');
       ctx.fillStyle = gradient;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
     };
@@ -730,57 +730,16 @@ const Particles = ({
 // SquaresLinesParticles — all three layers composed
 // ─────────────────────────────────────────────────────────────────────────────
 
-/**
- * SquaresLinesParticles
- *
- * Stack (bottom → top):
- *   1. Squares      — scrolling 2D grid (canvas)
- *   2. FloatingLines — GLSL wave lines (Three.js, mixBlendMode: screen)
- *   3. Particles    — floating 3D dots (raw WebGL)
- *
- * ── Squares props ─────────────────────────────────────────────────────────
- *   direction        'right'|'left'|'up'|'down'|'diagonal'
- *   squaresSpeed     scroll speed (px/frame)
- *   borderColor      grid line color
- *   squareSize       cell size in px
- *   hoverFillColor   cell fill on hover
- *
- * ── FloatingLines props ───────────────────────────────────────────────────
- *   linesGradient    string[]  hex colors for line gradient
- *   enabledWaves     string[]  subset of ['top','middle','bottom']
- *   lineCount        number | number[]  lines per wave layer
- *   lineDistance     number | number[]  spacing between lines
- *   animationSpeed   float
- *   interactive      bool — bend lines toward cursor
- *   bendRadius       float
- *   bendStrength     float
- *   parallax         bool
- *   parallaxStrength float
- *   linesMixBlendMode CSS mix-blend-mode string
- *
- * ── Particles props ───────────────────────────────────────────────────────
- *   particleCount        number
- *   particleSpread       float
- *   particlesSpeed       float
- *   particleColors       string[]  hex colors
- *   moveParticlesOnHover bool
- *   particleHoverFactor  float
- *   alphaParticles       bool
- *   particleBaseSize     float
- *   sizeRandomness       float
- *   cameraDistance       float
- *   disableRotation      bool
- */
 const SquaresLinesParticles = ({
   // Squares
   direction         = 'diagonal',
   squaresSpeed      = 0.5,
-  borderColor       = '#1a1a2e',
+  borderColor       = '#0a1628',
   squareSize        = 48,
-  hoverFillColor    = '#16213e',
+  hoverFillColor    = '#0d2137',
 
   // FloatingLines
-  linesGradient     = ['#a855f7', '#6366f1', '#ec4899'],
+  linesGradient     = ['#0ea5e9', '#38bdf8', '#0284c7'],
   enabledWaves      = ['top', 'middle', 'bottom'],
   lineCount         = [6],
   lineDistance      = [5],
@@ -800,7 +759,7 @@ const SquaresLinesParticles = ({
   particleCount        = 1000,
   particleSpread       = 12,
   particlesSpeed       = 0.1,
-  particleColors       = ['#a855f7', '#6366f1', '#ec4899', '#38bdf8', '#34d399', '#fb923c', '#f472b6', '#ffffff'],
+  particleColors       = ['#0ea5e9', '#38bdf8', '#7dd3fc', '#0284c7', '#bae6fd', '#60a5fa', '#93c5fd', '#ffffff'],
   moveParticlesOnHover = true,
   particleHoverFactor  = 0.5,
   alphaParticles       = true,
@@ -810,7 +769,7 @@ const SquaresLinesParticles = ({
   disableRotation      = false,
 }) => {
   return (
-    <div style={{ position: 'relative', width: '100%', height: '100%', overflow: 'hidden', background: '#060010' }}>
+    <div style={{ position: 'relative', width: '100%', height: '100%', overflow: 'hidden', background: '#000d1a' }}>
 
       {/* ── Layer 1: Squares grid ── */}
       <Squares
