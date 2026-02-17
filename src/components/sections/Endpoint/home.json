@@ -1,0 +1,22 @@
+{
+  "home": {
+    "name": "Katrina Marie Amoguis",
+    "title": "Hi, I'm Katrina Marie Amoguis",
+    "description": "Hello! I have a diverse professional background in administrative assistance, recruitment, training, social media management, marketing, and sourcing.",
+    "image": "./sample-proj/1.png",
+    "resume": "./sample-proj/FResume.pdf",
+    "buttons": [
+      {
+        "text": "View Resume",
+        "type": "resume",
+        "style": "primary"
+      },
+      {
+        "text": "Know me more",
+        "type": "link",
+        "href": "#about",
+        "style": "secondary"
+      }
+    ]
+  }
+}

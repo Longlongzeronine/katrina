@@ -1,0 +1,71 @@
+{
+  "social": {
+    "profile": {
+      "image": "../assets/profile.png",
+      "name": "Katrina Marie",
+      "title": "BS EDUCATION",
+      "alt": "Profile"
+    },
+    "contactInfo": [
+      {
+        "icon": "FaEnvelope",
+        "label": "Email",
+        "value": "kakatamoguis@gmail.com",
+        "color": "blue",
+        "iconColor": "text-blue-400",
+        "hoverBorder": "group-hover:border-blue-500"
+      },
+      {
+        "icon": "FaPhone",
+        "label": "Phone",
+        "value": "+6309676002447",
+        "color": "green",
+        "iconColor": "text-green-400",
+        "hoverBorder": "group-hover:border-green-500"
+      },
+      {
+        "icon": "FaCakeCandles",
+        "label": "Birthday",
+        "value": "September 10, 2003",
+        "color": "purple",
+        "iconColor": "text-purple-400",
+        "hoverBorder": "group-hover:border-purple-500"
+      },
+      {
+        "icon": "FaLocationDot",
+        "label": "Location",
+        "value": "Pangi Maco Davao De Oro",
+        "color": "red",
+        "iconColor": "text-red-400",
+        "hoverBorder": "group-hover:border-red-500"
+      }
+    ],
+    "socialLinks": [
+      {
+        "icon": "FaFacebook",
+        "url": "https://facebook.com",
+        "label": "Facebook"
+      },
+      {
+        "icon": "FaTwitter",
+        "url": "https://twitter.com",
+        "label": "Twitter"
+      },
+      {
+        "icon": "FaInstagram",
+        "url": "https://instagram.com",
+        "label": "Instagram"
+      },
+      {
+        "icon": "FaGithub",
+        "url": "https://github.com",
+        "label": "GitHub"
+      },
+      {
+        "icon": "FaLinkedin",
+        "url": "https://linkedin.com",
+        "label": "LinkedIn"
+      }
+    ]
+  }
+}

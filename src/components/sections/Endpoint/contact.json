@@ -1,0 +1,49 @@
+{
+  "contact": {
+    "title": "Let's",
+    "titleHighlight": "Talk",
+    "description": "Have some big idea or brand to develop and need help? Then reach out — we'd love to hear about your project and provide help.",
+    "image": "./sample-proj/1.svg",
+    "imageAlt": "Francis Amoguis",
+    "form": {
+      "fields": [
+        {
+          "name": "name",
+          "type": "text",
+          "placeholder": "Name",
+          "required": true
+        },
+        {
+          "name": "email",
+          "type": "email",
+          "placeholder": "Email",
+          "required": true
+        },
+        {
+          "name": "company",
+          "type": "text",
+          "placeholder": "Company",
+          "required": false
+        },
+        {
+          "name": "subject",
+          "type": "text",
+          "placeholder": "Subject",
+          "required": true
+        },
+        {
+          "name": "message",
+          "type": "textarea",
+          "placeholder": "Message",
+          "rows": 6,
+          "required": true
+        }
+      ],
+      "submitButton": {
+        "text": "Send",
+        "successMessage": "Message Sent!",
+        "errorMessage": "Oops! Something went wrong. Please try again."
+      }
+    }
+  }
+}
