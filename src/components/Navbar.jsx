@@ -27,13 +27,13 @@ export const Navbar = ({ menuOpen, setMenuOpen, goToPage, currentPage }) => {
                 onClick={() => goToPage(href)}
                 className={`relative transition-colors duration-300 ${
                   currentPage === href
-                    ? "text-[#503DA8] font-bold"
-                    : "text-gray-600 hover:text-[#503DA8]"
+                    ? "text-[#0ea5e9] font-bold"
+                    : "text-gray-600 hover:text-[#0ea5e9]"
                 }`}
               >
                 {label}
                 {currentPage === href && (
-                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-[#503DA8] rounded-full" />
+                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-[#0284c7] via-[#38bdf8] to-[#0ea5e9] rounded-full" />
                 )}
               </button>
             </li>

@@ -1,28 +1,50 @@
 import { useEffect } from "react";
+import ColorBends from "../ColorBends"; // adjust path as needed
 
 export const LoadingScreen = ({ onComplete }) => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       onComplete();
-    }, 3000); // adjust duration as needed
+    }, 3000);
     return () => clearTimeout(timeout);
   }, [onComplete]);
 
   return (
-    <div className="fixed inset-0 z-50 bg-white flex flex-col items-center justify-center space-y-6">
-      {/* Hello World typing animation */}
-      <h1 className="text-2xl md:text-4xl font-mono font-bold text-black typewriter">
-        {"<Hello World!>"}
-      </h1>
+    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center space-y-6 bg-slate-950">
 
-      {/* Typing indicator */}
-      <div className="typing-indicator">
-        <div className="typing-circle"></div>
-        <div className="typing-circle"></div>
-        <div className="typing-circle"></div>
-        <div className="typing-shadow"></div>
-        <div className="typing-shadow"></div>
-        <div className="typing-shadow"></div>
+      {/* ── Particles background ── */}
+      <div className="absolute inset-0 z-0">
+        <ColorBends
+          colors={["#ff5c7a"]}
+          rotation={0}
+          speed={0.2}
+          scale={1}
+          frequency={1}
+          warpStrength={1}
+          mouseInfluence={1}
+          parallax={0.5}
+          noise={0.1}
+          transparent={false}
+          autoRotate={5}
+        />
+      </div>
+
+      {/* ── Content sits above particles ── */}
+      <div className="relative z-10 flex flex-col items-center space-y-6">
+        {/* Hello World typing animation */}
+        <h1 className="text-2xl md:text-4xl font-mono font-bold text-white typewriter">
+          {"<MyPortfolio!>"}
+        </h1>
+
+        {/* Typing indicator */}
+        <div className="typing-indicator">
+          <div className="typing-circle"></div>
+          <div className="typing-circle"></div>
+          <div className="typing-circle"></div>
+          <div className="typing-shadow"></div>
+          <div className="typing-shadow"></div>
+          <div className="typing-shadow"></div>
+        </div>
       </div>
 
       {/* CSS styles */}
@@ -30,24 +52,18 @@ export const LoadingScreen = ({ onComplete }) => {
         .typewriter {
           overflow: hidden;
           white-space: nowrap;
-          border-right: 3px solid black;
+          border-right: 3px solid white;
           width: 0;
           animation: typing 2s steps(20, end) forwards, blink 0.75s step-end infinite;
         }
 
         @keyframes typing {
-          from {
-            width: 0;
-          }
-          to {
-            width: 14ch;
-          }
+          from { width: 0; }
+          to   { width: 14ch; }
         }
 
         @keyframes blink {
-          50% {
-            border-color: transparent;
-          }
+          50% { border-color: transparent; }
         }
 
         .typing-indicator {
@@ -62,7 +78,7 @@ export const LoadingScreen = ({ onComplete }) => {
           height: 8px;
           position: absolute;
           border-radius: 50%;
-          background-color: #000;
+          background-color: #fff;
           left: 15%;
           transform-origin: 50%;
           animation: typing-circle 0.5s alternate infinite ease;
@@ -100,7 +116,7 @@ export const LoadingScreen = ({ onComplete }) => {
           width: 5px;
           height: 4px;
           border-radius: 50%;
-          background-color: rgba(0, 0, 0, 0.2);
+          background-color: rgba(255, 255, 255, 0.2);
           position: absolute;
           top: 30px;
           transform-origin: 50%;
@@ -122,17 +138,9 @@ export const LoadingScreen = ({ onComplete }) => {
         }
 
         @keyframes typing-shadow {
-          0% {
-            transform: scaleX(1.5);
-          }
-          40% {
-            transform: scaleX(1);
-            opacity: 0.7;
-          }
-          100% {
-            transform: scaleX(0.2);
-            opacity: 0.4;
-          }
+          0%   { transform: scaleX(1.5); }
+          40%  { transform: scaleX(1); opacity: 0.7; }
+          100% { transform: scaleX(0.2); opacity: 0.4; }
         }
       `}</style>
     </div>
