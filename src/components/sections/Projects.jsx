@@ -23,6 +23,7 @@ import myImage19 from './sample-proj/p-23.png';
 import myImage20 from './sample-proj/p-24.png';
 import myImage21 from './sample-proj/p-25.png';
 import myImage22 from './sample-proj/p-27.png';
+import myImage23 from './sample-proj/p-30.png';
 
 // ✅ Dynamically import only images that actually exist
 const allGalleryImages = import.meta.glob('./sample-proj/p-*.png', { eager: true });
@@ -54,6 +55,7 @@ const imageMap = {
   './sample-proj/p-24.png': myImage20,
   './sample-proj/p-25.png': myImage21,
   './sample-proj/p-27.png': myImage22,
+  './sample-proj/p-30.png': myImage23,
 };
 
 // ✅ Custom hook to extract colors from an image
@@ -376,10 +378,9 @@ export const Projects = () => {
   const colors0 = useImageColors(myImage);
   const colors1 = useImageColors(myImage3);
   const colors2 = useImageColors(myImage1);
-  const colors3 = useImageColors(myImage2);
-  const colors4 = useImageColors(myImage2);
-  const colors5 = useImageColors(myImage22);
+  const colors3 = useImageColors(myImage23);
   const colorsWV0 = useImageColors(myImage2);
+  const colorsOS0 = useImageColors(myImage5); // Color for Offered Services
 
   useEffect(() => {
     const socialNavbar = document.getElementById('social-navbar');
@@ -407,7 +408,7 @@ export const Projects = () => {
   };
 
   // colorMap index matches projects array index (0-based)
-  const colorMap = [colors0, colors1, colors2, colors3, colors4, colors5];
+  const colorMap = [colors0, colors1, colors2, colors3];
 
   const projects = projectsData.projects.map((project, index) => ({
     ...project,
@@ -420,6 +421,14 @@ export const Projects = () => {
     ...project,
     image: imageMap[project.image],
     colors: colorsWV0,
+    gallery: project.gallery.map(img => imageMap[img] ?? allGalleryImages[img]?.default ?? null).filter(Boolean),
+  }));
+
+  // ✅ New: Offered Services data mapping
+  const offeredServices = projectsData.offeredServices.map((project) => ({
+    ...project,
+    image: imageMap[project.image],
+    colors: colorsOS0,
     gallery: project.gallery.map(img => imageMap[img] ?? allGalleryImages[img]?.default ?? null).filter(Boolean),
   }));
 
@@ -470,6 +479,23 @@ export const Projects = () => {
                 onGithubClick={handleGithubClick}
               />
             ))}
+          </div>
+
+          {/* ✅ NEW: Offered Services Section */}
+          <div className="text-center mb-16">
+            <h1 className="text-5xl font-bold mb-4 text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
+              Offered{" "}
+              <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent">Services</span>
+            </h1>
+            <p className="text-xl text-gray-100 max-w-5xl mx-auto pt-3 drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
+              Professional services I offer for various projects and clients.
+            </p>
+          </div>
+          <div className="rounded-xl border border-white/15 bg-black/50 backdrop-blur-md p-6 mb-24">
+            <ProjectGalleryCarousel
+              images={offeredServices[0]?.gallery ?? []}
+              onOpenLightbox={(startIndex) => openLightbox(offeredServices[0]?.gallery ?? [], startIndex)}
+            />
           </div>
 
           {/* Work Values Inventory */}

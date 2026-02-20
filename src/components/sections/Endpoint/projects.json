@@ -27,12 +27,14 @@
       "title": "Project Gallery",
       "description": "Here are some of the projects I worked on.",
       "gallery": ["./sample-proj/p-30.png"]
-    },
+    }
+  ],
+  "offeredServices": [
     {
-      "id": 5,
-      "image": "./sample-proj/p-5.png",
-      "title": "Project Gallery",
-      "description": "Here are some of the projects I worked on.",
+      "id": 1,
+      "image": "./sample-proj/p-7.png",
+      "title": "Offered Services",
+      "description": "Professional services I offer for various projects and clients.",
       "gallery": [
         "./sample-proj/p-7.png",
         "./sample-proj/p-13.png",
