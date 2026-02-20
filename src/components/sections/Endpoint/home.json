@@ -5,16 +5,16 @@
     "description": "Hello! I am a passionate and dedicated Education graduate committed to inspiring students and creating a positive, engaging learning environment that supports both academic achievement and personal growth.",
     "image": "./sample-proj/1.png",
     "resume": "./sample-proj/FResume.pdf",
+    "applicationLetter": "./sample-proj/ApplicationLetter.pdf",
     "buttons": [
       {
-        "text": "View Resume",
-        "type": "resume",
+        "text": "Application Letter",
+        "type": "application",
         "style": "primary"
       },
       {
-        "text": "Know me more",
-        "type": "link",
-        "href": "#about",
+        "text": "Resume",
+        "type": "resume",
         "style": "secondary"
       }
     ]

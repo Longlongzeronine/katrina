@@ -26,7 +26,14 @@
       "image": "./sample-proj/p-5.png",
       "title": "Project Gallery",
       "description": "Here are some of the projects I worked on.",
-      "gallery": ["./sample-proj/p-7.png"]
+      "gallery": [
+        "./sample-proj/p-7.png",
+        "./sample-proj/p-13.png",
+        "./sample-proj/p-14.png",
+        "./sample-proj/p-15.png",
+        "./sample-proj/p-16.png",
+        "./sample-proj/p-17.png"
+      ]
     }
   ],
   "workValues": [
@@ -35,34 +42,21 @@
       "image": "./sample-proj/p-5.png",
       "title": "Work Values Inventory",
       "description": "This is my Work Values Inventory.",
-      "gallery": ["./sample-proj/p-5.png", "./sample-proj/p-6.png"]
-    },
-    {
-      "id": 2,
-      "image": "./sample-proj/p-8.png",
-      "title": "Work Values Inventory",
-      "description": "This is my Work Values Inventory.",
-      "gallery": ["./sample-proj/p-8.png"]
+      "gallery": [
+        "./sample-proj/p-5.png",
+        "./sample-proj/p-6.png",
+        "./sample-proj/p-10.png",
+        "./sample-proj/p-11.png",
+        "./sample-proj/p-12.png"
+      ]
     }
   ],
   "projectGallery": [
-    "./sample-proj/p-11.png",
-    "./sample-proj/p-12.png",
-    "./sample-proj/p-13.png",
-    "./sample-proj/p-14.png",
-    "./sample-proj/p-16.png",
-    "./sample-proj/p-17.png",
-    "./sample-proj/p-18.png",
-    "./sample-proj/p-19.png",
     "./sample-proj/p-20.png",
     "./sample-proj/p-21.png",
     "./sample-proj/p-22.png",
     "./sample-proj/p-23.png",
     "./sample-proj/p-24.png",
-    "./sample-proj/p-25.png",
-    "./sample-proj/p-26.png",
-    "./sample-proj/p-27.png",
-    "./sample-proj/p-28.png",
-    "./sample-proj/p-29.png"
+    "./sample-proj/p-25.png"
   ]
 }

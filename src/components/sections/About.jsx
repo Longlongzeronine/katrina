@@ -75,7 +75,7 @@ export const About = () => {
                         </h4>
 
                         {/* Description */}
-                        <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">
+                       <p className="text-gray-300 text-xs sm:text-sm leading-relaxed whitespace-pre-line text-left">
                           {card.description}
                         </p>
                       </div>

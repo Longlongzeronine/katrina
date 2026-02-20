@@ -2,6 +2,8 @@ import { RevealOnScroll } from "../RevealOnScroll";
 import ColorBends from "../../ColorBends";
 import myImage from "./sample-proj/1.png";
 import homeData from "./Endpoint/home.json";
+import applicationLetterPdf from "./sample-proj/ApplicationLetter.pdf";
+import resumePdf from "./sample-proj/resume.pdf";
 
 export const Home = ({ goToPage }) => {
   const { home } = homeData;
@@ -53,13 +55,30 @@ export const Home = ({ goToPage }) => {
               {home.description}
             </p>
 
-            {/* Know Me More Button */}
-            <button
-              onClick={() => goToPage("about")}
-              className="border border-white/30 text-white py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-0.5 hover:bg-white/10 hover:border-[#0ea5e9] hover:shadow-[0_0_15px_rgba(14,165,233,0.3)] cursor-pointer"
-            >
-              {home.buttons[1].text}
-            </button>
+            {/* Buttons */}
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              {/* Application Letter Button */}
+              <a
+                href={applicationLetterPdf}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#0ea5e9] text-white py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#0284c7] hover:shadow-[0_0_15px_rgba(14,165,233,0.4)] cursor-pointer text-center"
+              >
+                📄 Application Letter
+              </a>
+
+              {/* Resume Button */}
+              <a
+                href={resumePdf}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border border-white/30 text-white py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-0.5 hover:bg-white/10 hover:border-[#0ea5e9] hover:shadow-[0_0_15px_rgba(14,165,233,0.3)] cursor-pointer text-center"
+              >
+                📋 View Resume
+              </a>
+
+
+            </div>
           </div>
 
         </div>

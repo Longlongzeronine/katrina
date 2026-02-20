@@ -6,33 +6,33 @@
     "skillCards": [
       {
         "icon": "FaGraduationCap",
-        "title": "Career Advancement",
-        "description": "Take licensure examination, Take Masters Degree, Join groups in my city, professional"
+        "title": "I. Career Advancement",
+        "description": "1. Take licensure examination\n2. Attend professional development training\n3. Take leadership roles in school"
       },
       {
         "icon": "FaPiggyBank",
-        "title": "Financial Stability",
-        "description": "Open Savings account, Earn Bigger Salary"
+        "title": "II. Financial Stability",
+        "description": "1. Apply for promotion\n2. Develop additional income sources\n3. Practice financial planning and saving"
       },
       {
         "icon": "FaHeartbeat",
-        "title": "Health & Wellness",
-        "description": "Lower health care coverage costs, Ensure medical insurance for myself and for my family."
+        "title": "III. Health and Wellness",
+        "description": "1. Maintain work-life balance\n2. Engage in regular physical activity\n3. Practice mental and emotional wellness"
       },
       {
         "icon": "FaHandsHelping",
-        "title": "Community Engagement",
-        "description": "Find opportunities to volunteer in community outreach programs."
+        "title": "IV. Community Engagement",
+        "description": "1. Participate in outreach programs\n2. Build strong parent-teacher relationships\n3. Collaborate with fellow educators"
       },
       {
         "icon": "FaToolbox",
-        "title": "Added Skills",
-        "description": "Service Proficiency, Attention to detail."
+        "title": "V. Added Skills",
+        "description": "1. Enhance digital literacy skills\n2. Develop research skills\n3. Improve communication skills"
       },
       {
         "icon": "FaHome",
-        "title": "Personal Satisfaction",
-        "description": "Earn enough money for emergency and for future use, To build a house that I can call my own, To start a business."
+        "title": "VI. Personal Satisfaction",
+        "description": "1. Witness student growth\n2. Create positive classroom environment\n3. Practice continuous self-improvement"
       }
     ]
   }
