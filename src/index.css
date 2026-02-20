@@ -3,6 +3,8 @@
 
 @tailwind utilities;
 
+@custom-variant 3xl (@media (width >= 1441px));
+
 html, body {
   margin: 0;
   padding: 0;

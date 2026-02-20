@@ -36,7 +36,7 @@ export const SocialNavbar = () => {
   return (
     <div
       id="social-navbar"
-      className="hidden lg:block fixed top-1/2 right-8 -translate-y-1/2 z-50 w-80
+      className="hidden 3xl:block fixed top-1/2 right-8 -translate-y-1/2 z-50 w-80
       bg-slate-950 rounded-3xl border border-slate-800 shadow-2xl p-6 backdrop-blur-sm"
     >
       {/* Profile Image */}
