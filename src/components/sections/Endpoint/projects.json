@@ -23,6 +23,13 @@
     },
     {
       "id": 4,
+      "image": "./sample-proj/p-30.png",
+      "title": "Project Gallery",
+      "description": "Here are some of the projects I worked on.",
+      "gallery": ["./sample-proj/p-30.png"]
+    },
+    {
+      "id": 5,
       "image": "./sample-proj/p-5.png",
       "title": "Project Gallery",
       "description": "Here are some of the projects I worked on.",

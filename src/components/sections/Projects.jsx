@@ -22,6 +22,7 @@ import myImage18 from './sample-proj/p-22.png';
 import myImage19 from './sample-proj/p-23.png';
 import myImage20 from './sample-proj/p-24.png';
 import myImage21 from './sample-proj/p-25.png';
+import myImage22 from './sample-proj/p-27.png';
 
 // ✅ Dynamically import only images that actually exist
 const allGalleryImages = import.meta.glob('./sample-proj/p-*.png', { eager: true });
@@ -52,6 +53,7 @@ const imageMap = {
   './sample-proj/p-23.png': myImage19,
   './sample-proj/p-24.png': myImage20,
   './sample-proj/p-25.png': myImage21,
+  './sample-proj/p-27.png': myImage22,
 };
 
 // ✅ Custom hook to extract colors from an image
@@ -157,7 +159,7 @@ const ImageGallery = ({ images, startIndex = 0, onClose }) => {
       <button onClick={onClose} className="absolute top-5 right-5 text-white text-4xl font-bold z-50 hover:text-gray-300 cursor-pointer transition">&times;</button>
       {hasMultiple && (
         <button onClick={goToPrevious}
-          className="absolute left-5 top-1/2 -translate-y-1/2 z-50 cursor-pointer transition-all duration-200 hover:scale-110 select-none flex items-center justify-center text-white text-4xl font-bold cursor-pointer"
+          className="absolute left-5 top-1/2 -translate-y-1/2 z-50 cursor-pointer transition-all duration-200 hover:scale-110 select-none flex items-center justify-center text-white text-4xl font-bold"
           style={{ background: 'rgba(255,255,255,0.12)', border: '1px solid rgba(255,255,255,0.2)', backdropFilter: 'blur(6px)', borderRadius: '50%', width: '52px', height: '52px' }}>‹</button>
       )}
       <div className="flex flex-col items-center justify-center max-w-6xl w-full px-24">
@@ -180,7 +182,7 @@ const ImageGallery = ({ images, startIndex = 0, onClose }) => {
       </div>
       {hasMultiple && (
         <button onClick={goToNext}
-          className="absolute right-5 top-1/2 -translate-y-1/2 z-50 cursor-pointer transition-all duration-200 hover:scale-110 select-none flex items-center justify-center text-white text-4xl font-bold cursor-pointer"
+          className="absolute right-5 top-1/2 -translate-y-1/2 z-50 cursor-pointer transition-all duration-200 hover:scale-110 select-none flex items-center justify-center text-white text-4xl font-bold"
           style={{ background: 'rgba(255,255,255,0.12)', border: '1px solid rgba(255,255,255,0.2)', backdropFilter: 'blur(6px)', borderRadius: '50%', width: '52px', height: '52px' }}>›</button>
       )}
       <style>{`@keyframes galleryFadeIn { from { opacity: 0; transform: scale(0.97); } to { opacity: 1; transform: scale(1); } }`}</style>
@@ -375,6 +377,8 @@ export const Projects = () => {
   const colors1 = useImageColors(myImage3);
   const colors2 = useImageColors(myImage1);
   const colors3 = useImageColors(myImage2);
+  const colors4 = useImageColors(myImage2);
+  const colors5 = useImageColors(myImage22);
   const colorsWV0 = useImageColors(myImage2);
 
   useEffect(() => {
@@ -402,7 +406,9 @@ export const Projects = () => {
     setLightboxStartIndex(startIndex);
   };
 
-  const colorMap = [colors0, colors1, colors2, colors3];
+  // colorMap index matches projects array index (0-based)
+  const colorMap = [colors0, colors1, colors2, colors3, colors4, colors5];
+
   const projects = projectsData.projects.map((project, index) => ({
     ...project,
     image: imageMap[project.image],
@@ -466,7 +472,7 @@ export const Projects = () => {
             ))}
           </div>
 
-          {/* Work Values Inventory — centered when single card */}
+          {/* Work Values Inventory */}
           <div className="text-center mb-16">
             <h1 className="text-5xl font-bold mb-4 text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
               Work Values{" "}
